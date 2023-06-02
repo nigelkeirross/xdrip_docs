@@ -19,7 +19,7 @@
     
     
       
-        <title>Libre 2 - xDrip+</title>
+        <title>Libre 2 Direct - xDrip+</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prerequisites" class="md-skip">
+        <a href="#libre-2-direct" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Libre 2
+              Libre 2 Direct
             
           </span>
         </div>
@@ -502,14 +502,16 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Libre 2
+          Libre 2 Direct
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Libre 2
+        Libre 2 Direct
       </a>
       
         
@@ -518,12 +520,21 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-for-the-first-time" class="md-nav__link">
+    Setting Up for the first time
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
@@ -540,9 +551,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#starting-libre-2-sensors" class="md-nav__link">
+    Starting Libre 2 Sensors
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting Libre 2 Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#connect-to-the-sensor" class="md-nav__link">
     Connect to the sensor
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1506,6 +1530,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../troubleshoot/libre2direct/" class="md-nav__link">
+        Libre 2 Direct
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../troubleshoot/bridgeFW/" class="md-nav__link">
         Bridge Firmware
       </a>
@@ -1594,12 +1632,21 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-for-the-first-time" class="md-nav__link">
+    Setting Up for the first time
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
@@ -1616,9 +1663,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#starting-libre-2-sensors" class="md-nav__link">
+    Starting Libre 2 Sensors
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting Libre 2 Sensors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#connect-to-the-sensor" class="md-nav__link">
     Connect to the sensor
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1637,15 +1697,17 @@
                   
 
 
-  <h1>Libre 2</h1>
-
+<h1 id="libre-2-direct">Libre 2 Direct<a class="headerlink" href="#libre-2-direct" title="Permanent link">⌁</a></h1>
+<p>This describes how to enable direct Bluetooth connection between the sensor &amp; xDrip+, without the need for a bridge.</p>
+<h2 id="setting-up-for-the-first-time">Setting Up for the first time<a class="headerlink" href="#setting-up-for-the-first-time" title="Permanent link">⌁</a></h2>
+<p>Click <a href="#starting-libre-2-sensors">Start Sensor</a> for subsequent sensors</p>
+<div class="admonition info">
+<p class="admonition-title">Only Libre 2 Europe sensor model is supported</p>
+</div>
 <p><img src="../../images/hamburger_menu.png" style="zoom:75%;" /><br />
 <img src="../../images/M-S.png" style="zoom:75%;" /><br />
 <img src="../../images/M-S-HDS.png" style="zoom:75%;" /><br />
 <img src="../images/M-S-HDSlistC.png" style="zoom:75%;" /></p>
-<div class="admonition info">
-<p class="admonition-title">Only Libre 2 Europe sensor model is supported</p>
-</div>
 <p>Libre 2 reference documentation is <a href="https://www.minimallooper.com/post/how-to-setup-freestyle-libre-2-and-oop2-to-use-a-native-bluetooth-connection-in-xdrip">here</a>.</p>
 <p></br></p>
 <div class="admonition warning">
@@ -1657,7 +1719,6 @@ Like Libre bridges, success and reliability will vary depending on your phone.<b
 Linking your sensor to xDrip+ will void the vendor warranty on the sensor Bluetooth feature.</p>
 </div>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">⌁</a></h2>
-<p>Your Libre 2 sensor is started and you can see BG values when scanning it with the reader or the vendor app.</p>
 <p>The phone on which you installed xDrip+ has an NFC reader.</p>
 <p>If the vendor app is installed on the same phone you're using for xDrip+, <strong>you uninstalled it</strong>.<br />
 If it is installed on another phone or you're using the Bluetooth reader, you've put these devices far away, or shielded them so that they won't interfere.</p>
@@ -1671,13 +1732,17 @@ If it is installed on another phone or you're using the Bluetooth reader, you've
 <p><img src="../../use/images/M-S-LCS15i2.png" style="zoom:75%;" /></p>
 <p>Verify xDrip+ <a href="../libreBT/#bridge-settings">Bluetooth settings</a> are correct.</p>
 <p><img src="../images/M-S-LCS-BT-L2a.png" style="zoom:75%;" /></p>
-<h2 id="connect-to-the-sensor">Connect to the sensor<a class="headerlink" href="#connect-to-the-sensor" title="Permanent link">⌁</a></h2>
-<p>If you have a previous sensor connected to xDrip+, <a href="../../use/stopsensor">stop</a> the old sensor.</p>
+<p>Now continue below...</p>
+<h2 id="starting-libre-2-sensors">Starting Libre 2 Sensors<a class="headerlink" href="#starting-libre-2-sensors" title="Permanent link">⌁</a></h2>
+<p>Physically insert your Libre2 sensor &amp; start it with the very first NFC scan using either the reader device, or LibreLink. Make a ote of the time that the sensor will be ready. If using the same phone as xDrip, disable LibreLink on the phone. You should see BG values when scanning it. Now wait 60 minutes until the sensor has warmed up and self-calibrated.</p>
+<h3 id="connect-to-the-sensor">Connect to the sensor<a class="headerlink" href="#connect-to-the-sensor" title="Permanent link">⌁</a></h3>
+<p>Open xDrip+
+If you have a previous sensor connected to xDrip+, <a href="../../use/stopsensor">stop</a> the old sensor.</p>
 <p><img src="../../images/hamburger_menu.png" style="zoom:75%;" /></p>
 <p><img src="../images/M-StoS.png" style="zoom:75%;" /></p>
 <p>Confirm you really want to stop the sensor.</p>
 <p><img src="../images/M-StoSC.png" style="zoom:75%;" /></p>
-<p>Scan the sensor with xDrip+ <a href="../libreNFC">NFC</a> feature and make sure you see the toast message "Scanned OK!".</p>
+<p>Scan the sensor with xDrip+ <a href="../libreNFC">NFC</a> feature and make sure you see the toast messages "Scanning.." &amp; then  "Scanned OK!".</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Hold the phone steady when scanning the sensor and don't move it: it's taking longer than reading the sensor as you usually do with the vendor app.<br />
@@ -1686,9 +1751,14 @@ Remember you should wait one minute between two successful NFC scans.</p>
 <p>Start the sensor in xDrip+.</p>
 <p><img src="../../images/hamburger_menu.png" style="zoom:75%;" /></p>
 <p><img src="../images/M-StaS.png" style="zoom:75%;" /></p>
-<p>Confirm <code>START SENSOR</code></p>
+<p>Confirm <code>START SENSOR</code>. </p>
 <p><img src="../images/M-StaSC.png" style="zoom:75%;" /></p>
-<p>Continue to <a href="../../use/startsensor/#libre">Start Sensor</a></p>
+<p>At the prompt <strong>Did you insert it today?</strong> you must press <strong>NOT TODAY</strong></p>
+<p><img src="../images/not-today-popup.png" style="zoom:150%;" /></p>
+<p>Wait 60 seconds &amp; NFC scan again with xDrip+. This adds the sensor as the BT device that xDrip+ will take the readings from. Exect to see NEW SENSOR STARTED notification, and you should then be in the "Collecting Initial Readings" screen.
+You will now need to wait between 3 and 15 minutes for 3 readings to be received, and then you will be taken to the <strong>Calibrate Sensor?</strong> prompt.
+After entering the calibration data, the Libre 2 sensor should be bonded to xDrip+, and should deliver readings every 5 minutes.</p>
+<p>You can confirm that all is working by comparing to "How it should look" <a href="../../troubleshoot/libre2direct/## What it should look like">here</a></p>
 <p>If you have trouble getting data directly from the sensor, scan it every 5 minutes with xDrip+ NFC until you reach the calibration request (applies if you selected the <a href="../../use/misc/#oop2">calibration option</a> with OOP2).</p>
 <p></br></p>
 <p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.02.02"><em>Last modified 2/2/2023</em></a></p>
