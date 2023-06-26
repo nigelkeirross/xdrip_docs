@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#juggluco" class="md-skip">
+        <a href="#smoothing" class="md-skip">
           Skip to content
         </a>
       
@@ -554,6 +554,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#smoothing" class="md-nav__link">
+    Smoothing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#juggluco" class="md-nav__link">
     Juggluco
   </a>
@@ -563,6 +570,13 @@
         <li class="md-nav__item">
   <a href="#diabox" class="md-nav__link">
     Diabox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkupconnect" class="md-nav__link">
+    LinkUpConnect
   </a>
   
 </li>
@@ -1527,6 +1541,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../troubleshoot/webfollow/" class="md-nav__link">
+        Libre Web Follower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../troubleshoot/bridgeFW/" class="md-nav__link">
         Bridge Firmware
       </a>
@@ -1623,6 +1651,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#smoothing" class="md-nav__link">
+    Smoothing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#juggluco" class="md-nav__link">
     Juggluco
   </a>
@@ -1632,6 +1667,13 @@
         <li class="md-nav__item">
   <a href="#diabox" class="md-nav__link">
     Diabox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkupconnect" class="md-nav__link">
+    LinkUpConnect
   </a>
   
 </li>
@@ -1659,25 +1701,42 @@
 <img src="../images/M-S-HDSlistG.png" style="zoom:75%;" /></p>
 <div class="admonition info">
 <p class="admonition-title">Patched app</p>
-<p>The patched app is only available for the European version of Libre 2.<br />
-If you use another model, see below for alternative solutions using another app as a companion.</p>
+<p>The patched app itself is only available for the European version of Libre 2.<br />
+Being an old app, it is rarely compatible with Android versions above 12.</p>
 </div>
-<p>For Libre 2 Europe, follow <a href="https://androidaps.readthedocs.io/en/latest/Hardware/Libre2.html">these</a> guidelines.</p>
-<p>See <a href="../../troubleshoot/libre2">here</a> for more.</p>
+<p></br></p>
+<p>Other apps listed below use the same protocol to send data to xDrip+:</p>
+<p><strong><em>Note:</em></strong> <em>external apps readings will be treated like sensor data in all effects, this includes <a href="../../calibrate/calibrate/#libre-2-patched-app">calibration limitations</a>.</em> </p>
+<p>It shouldn't be necessary anymore but if you don't see data in xDrip+ <a href="../../use/startsensor/#followers-and-companion-apps">Start sensor</a>.</p>
+<p></br></p>
+<h4 id="smoothing">Smoothing<a class="headerlink" href="#smoothing" title="Permanent link">⌁</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Smoothing will apply to any external data source app using the <code>Libre2 (patched app)</code> data source.</p>
+</div>
+<p>The original implementation included a 25 minutes smoothing algorithm to remove noise and make DIY close looping safer with Libre sensors. You can now reduce the smoothing period to 10, 15 or 25 minutes with the menu <code>Smooth Libre 3 data when using xxx method</code>.</p>
+<p><img src="../../images/hamburger_menu.png" style="zoom:75%;" /><br />
+<img src="../../images/M-S.png" style="zoom:75%;" /><br />
+<img src="../images/M-S-HDS-NFC.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-HDS-NFC7.png" style="zoom:75%;" /></p>
+<p>Smoothing adds a delay in xDrip+ BG from raw data. The delay is about half the smoothing period. Set the delay accordingly to the sensor behavior for your safety. If you don't use a DIY closed loop system with xDrip+ providing glucose values, set it to 10 minutes.</p>
+<p><img src="../images/M-S-HDS-NFC8.png" style="zoom:75%;" /></p>
 <p></br></p>
 <h4 id="juggluco">Juggluco<a class="headerlink" href="#juggluco" title="Permanent link">⌁</a></h4>
 <p>If you use <a href="https://play.google.com/store/apps/details?id=tk.glucodata">Juggluco</a> you can broadcast to xDrip+ enabling Send to xDrip. You must have data streaming in Juggluco in order to see measurements in xDrip+.</p>
 <p><img src="../images/Juggluco.png" style="zoom:50%;" /></p>
-<p><strong><em>Note:</em></strong> <em>Juggluco readings will be treated like sensor data in all effects, this includes <a href="../../calibrate/calibrate/#libre-2-patched-app">calibration limitations</a>.</em> </p>
-<p>Continue to <a href="../../use/startsensor/#followers-and-companion-apps">Start sensor</a>.</p>
 <p></br></p>
 <h4 id="diabox">Diabox<a class="headerlink" href="#diabox" title="Permanent link">⌁</a></h4>
 <p>If you use a recent <a href="https://sirius.thetaphi.de/diabox/">Diabox</a> version, you can broadcast to xDrip+ enabling the option below:</p>
 <p><img src="../images/Diabox4.png" style="zoom:75%;" /></p>
-<p><strong><em>Note:</em></strong> <em>Diabox readings will be treated like sensor data in all effects, this includes <a href="../../calibrate/calibrate/#libre-2-patched-app">calibration limitations</a>.</em> </p>
-<p>Continue to <a href="../../use/startsensor/#followers-and-companion-apps">Start sensor</a>.</p>
 <p></br></p>
-<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2022.12.09"><em>Last modified 24/12/2022</em></a></p>
+<h4 id="linkupconnect">LinkUpConnect<a class="headerlink" href="#linkupconnect" title="Permanent link">⌁</a></h4>
+<p>LinkUpConnect is a vendor server follower, you need a Libre 3 to have CGM data in the app.<br />
+Data should be available in the vendor follower app.<br />
+Enable the <code>Forward to xDrip</code> flag.</p>
+<p><img src="../images/LinkUpConnect.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.06.17"><em>Last modified 21/06/2023</em></a></p>
 
 
 

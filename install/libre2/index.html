@@ -551,6 +551,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#manually-changing-settings" class="md-nav__link">
+    Manually changing settings..
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#starting-libre-2-sensors" class="md-nav__link">
     Starting Libre 2 Sensors
   </a>
@@ -1558,6 +1565,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../troubleshoot/webfollow/" class="md-nav__link">
+        Libre Web Follower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../troubleshoot/bridgeFW/" class="md-nav__link">
         Bridge Firmware
       </a>
@@ -1677,6 +1698,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#manually-changing-settings" class="md-nav__link">
+    Manually changing settings..
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#starting-libre-2-sensors" class="md-nav__link">
     Starting Libre 2 Sensors
   </a>
@@ -1714,7 +1742,7 @@
 <h1 id="libre-2-direct">Libre 2 Direct<a class="headerlink" href="#libre-2-direct" title="Permanent link">⌁</a></h1>
 <p>This describes how to enable direct Bluetooth connection between the sensor &amp; xDrip+, without the need for a bridge.</p>
 <h2 id="setting-up-for-the-first-time">Setting Up for the first time<a class="headerlink" href="#setting-up-for-the-first-time" title="Permanent link">⌁</a></h2>
-<p>Click <a href="#starting-libre-2-sensors">Start Sensor</a> for subsequent sensors</p>
+<p>(Click <a href="#starting-libre-2-sensors">Start Sensor</a> for subsequent sensors).</p>
 <div class="admonition info">
 <p class="admonition-title">Only Libre 2 Europe sensor model is supported</p>
 </div>
@@ -1737,8 +1765,10 @@ Linking your sensor to xDrip+ will void the vendor warranty on the sensor Blueto
 <p>If the vendor app is installed on the same phone you're using for xDrip+, <strong>you uninstalled it</strong>.<br />
 If it is installed on another phone or you're using the Bluetooth reader, you've put these devices far away, or shielded them so that they won't interfere.</p>
 <h2 id="setup-xdrip">Setup xDrip+<a class="headerlink" href="#setup-xdrip" title="Permanent link">⌁</a></h2>
-<p><img src="../images/libre2direct-qr.png" style="zoom:50%;" /></p>
-<p>As a short-cut, you can scan the QR code shown here to load the settings needed for Libre 2 direct. Under Settings in the left hans"hamburger" menu, select "Auto configure" and capture the QR code. You will need to press the Yes button to confirm that you want to import these settings. The full list of these imported settings are shown <a href="../libre2direct-qr-settings">here</a> Now skip to <a href="#starting-libre-2-sensors">Starting Libre 2 Sensors</a></p>
+<p><img src="../images/qr_libre2direct-nocalib.png" style="zoom:50%;" /></p>
+<p>As a short-cut, you can scan the QR code shown here to load the settings needed for Libre 2 direct. (This has calibration turned off - recommended for beginners. If instead you want calibration, <a href="../libre2direct-calib">follow this</a>). Under Settings in the left hand "hamburger" menu, select "Auto configure" and capture the QR code. You will need to press the Yes button to confirm that you want to import these settings. The full list of these imported settings are shown <a href="../libre2direct-qr-settings">here</a>.
+Now skip to <a href="#starting-libre-2-sensors">Starting Libre 2 Sensors</a></p>
+<h2 id="manually-changing-settings">Manually changing settings..<a class="headerlink" href="#manually-changing-settings" title="Permanent link">⌁</a></h2>
 <p>Configure NFC exactly <a href="../libreNFC/#enabling-nfc">like this</a>.</p>
 <p><img src="../images/M-S-HDS-NFC-L2.png" style="zoom:75%;" /></p>
 <p>In Starting Bluetooth connection with Libre2 sensors, allow xDrip+ to always connect with Libre 2 sensors.</p>
@@ -1769,15 +1799,15 @@ Remember you should wait one minute between two successful NFC scans.</p>
 <p><img src="../images/M-StaS.png" style="zoom:75%;" /></p>
 <p>Confirm <code>START SENSOR</code>. </p>
 <p><img src="../images/M-StaSC.png" style="zoom:75%;" /></p>
-<p>At the prompt <strong>Did you insert it today?</strong> you must press <strong>NOT TODAY</strong></p>
-<p><img src="../images/not-today-popup.png" style="zoom:150%;" /></p>
-<p>Wait 60 seconds &amp; NFC scan again with xDrip+. This adds the sensor as the BT device that xDrip+ will take the readings from. Exect to see NEW SENSOR STARTED notification, and you should then be in the "Collecting Initial Readings" screen.
+<p>At the prompt <strong>Did you insert it today?</strong> You must press <strong>NOT TODAY</strong></p>
+<p><img src="../images/M-StaSNotToday.png" style="zoom:75%;" /></p>
+<p>Wait 60 seconds &amp; NFC scan again with xDrip+. This adds the sensor as the BT device that xDrip+ will take the readings from. Expect to see NEW SENSOR STARTED notification. If you are set to No Calibration", you should see the first reading immediately. If you have set Calibration, you should then be in the "Collecting Initial Readings" screen.
 You will now need to wait between 3 and 15 minutes for 3 readings to be received, and then you will be taken to the <strong>Calibrate Sensor?</strong> prompt.
 After entering the calibration data, the Libre 2 sensor should be bonded to xDrip+, and should deliver readings every 5 minutes.</p>
 <p>You can confirm that all is working by comparing to "How it should look" <a href="../../troubleshoot/libre2direct/## What it should look like">here</a></p>
 <p>If you have trouble getting data directly from the sensor, scan it every 5 minutes with xDrip+ NFC until you reach the calibration request (applies if you selected the <a href="../../use/misc/#oop2">calibration option</a> with OOP2).</p>
 <p></br></p>
-<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.02.02"><em>Last modified 2/2/2023</em></a></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.05.26"><em>Last modified 6/6/2023</em></a></p>
 
 
 

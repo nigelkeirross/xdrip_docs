@@ -12,7 +12,7 @@
         <link rel="prev" href="../libre2/">
       
       
-        <link rel="next" href="../bridgeFW/">
+        <link rel="next" href="../webfollow/">
       
       <link rel="icon" href="../../xDrip+logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
@@ -1634,6 +1634,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../webfollow/" class="md-nav__link">
+        Libre Web Follower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../bridgeFW/" class="md-nav__link">
         Bridge Firmware
       </a>
@@ -1871,44 +1885,48 @@
 shown below.</p>
 <p>Go to xDrip+ System Status and also BT device. If you don't know how, look <a href="../systemstatus">here</a> first.</p>
 <h2 id="classic-status-page">Classic Status Page<a class="headerlink" href="#classic-status-page" title="Permanent link">⌁</a></h2>
-<p><img src="../images/classic-status-connected.png" style="zoom:75%;" /></p>
+<p><img src="../images/classic-status-connected.png" style="zoom:40%;" /></p>
 <h3 id="version">Version<a class="headerlink" href="#version" title="Permanent link">⌁</a></h3>
 <p>Will vary with your xDrip+ version</p>
 <h3 id="data-source">Data Source<a class="headerlink" href="#data-source" title="Permanent link">⌁</a></h3>
-<p>This should show as LimiTTer. Whilst mis-leading, this is normal behaviour</p>
+<p>This should show as LimiTTer. Whilst mis-leading, this is normal behaviour.</p>
 <h3 id="bluetooth-device">Bluetooth Device<a class="headerlink" href="#bluetooth-device" title="Permanent link">⌁</a></h3>
 <p>This is the unique serial ID for the sensor. It will start with ABBOTT...</p>
 <h3 id="connection-status">Connection status<a class="headerlink" href="#connection-status" title="Permanent link">⌁</a></h3>
 <p>This should be "connected".</p>
 <h3 id="sensor-start">Sensor Start<a class="headerlink" href="#sensor-start" title="Permanent link">⌁</a></h3>
 <p>The time the sensor is started.</p>
+<p></br></p>
 <h2 id="bt-device-page">BT Device Page<a class="headerlink" href="#bt-device-page" title="Permanent link">⌁</a></h2>
 <p>Swipe the screen towards the left to display the BT Device page.</p>
-<p><img src="../images/bt-device-connected.png" style="zoom:75%;" /></p>
+<p><img src="../images/bt-device-connected.png" style="zoom:40%;" /></p>
 <h3 id="bluetooth-collector-status">Bluetooth Collector Status<a class="headerlink" href="#bluetooth-collector-status" title="Permanent link">⌁</a></h3>
 <h3 id="phone-service-state">Phone Service State<a class="headerlink" href="#phone-service-state" title="Permanent link">⌁</a></h3>
-<p>This should normally give thw time that the last connection was made.
+<p>This should normally give the time that the last connection was made.
 Sometime it reads XXX Blu Con XXX, but this is a temporary phase, and will change to Last Connect HH:MM</p>
 <h3 id="bluetooth-device_1">Bluetooth Device<a class="headerlink" href="#bluetooth-device_1" title="Permanent link">⌁</a></h3>
 <p>Bluetooth should always be connected.</p>
 <h3 id="device-mac-address">Device Mac Address<a class="headerlink" href="#device-mac-address" title="Permanent link">⌁</a></h3>
 <p>This should be a string of six pairs of Hex numbers. Unique for each sensor</p>
 <h3 id="bluetooth-pairing">Bluetooth Pairing<a class="headerlink" href="#bluetooth-pairing" title="Permanent link">⌁</a></h3>
-<p>This should stay "Disabled, tap to enable. Be careful to NOT tap this.</p>
+<p>This should stay "Disabled, tap to enable. Be careful to NOT tap this.<br />
+If you tap it by mistake, tap it again until it returns to disabled.</p>
 <h3 id="slowest-wake-up">Slowest wake up<a class="headerlink" href="#slowest-wake-up" title="Permanent link">⌁</a></h3>
-<p>Ignore this</p>
+<p>You can ignore this. xDrip+ doesn't spend its time waiting for readings: it will start expecting them at after a certain time (traditionally 5 minutes). If no data arrives at that time, you'll see "Woke up early" meaning xDrip+ was expecting data to be ready but there's none. Slowest wake up is the highest delay encountered before receiving data normally.</p>
 <h3 id="next-wake-up">Next Wake up<a class="headerlink" href="#next-wake-up" title="Permanent link">⌁</a></h3>
 <p>Should say 5 minutes</p>
+<p></br></p>
 <h1 id="event-logs">Event Logs<a class="headerlink" href="#event-logs" title="Permanent link">⌁</a></h1>
 <p>From the vertical ... menu at the top right of the main screen, select View Events Log</p>
-<p><img src="../images/event-log-normal.png" style="zoom:75%;" /></p>
+<p><img src="../images/event-log-normal.png" style="zoom:40%;" /></p>
 <h3 id="libreoopalgorithm">LibreOOPAlgorithm<a class="headerlink" href="#libreoopalgorithm" title="Permanent link">⌁</a></h3>
 <p>you should see a row of comments of the format
 HH:MM Creating BG time = NNN raw = RRRR
-where HH::MM is the time, NNN is a coding for the time (TODO explain this), and RRRR is the raw value taken from the sensor.
+where HH::MM is the time, NNN is an internal time counter (a new reading has a number higher than the previous one), and RRRR is the raw value taken from the sensor, in 10th of mg/dl (1000 is 100 mg/dl or 5.5 mmol/l).
 This shows that the sensor is connected, and good readings are being taken.
 The reading should be every minute, although some might have skipped, as has happened here.</p>
-<p>!</p>
+<p></br></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.05.26"><em>Last modified 4/6/2023</em></a></p>
 
 
 
