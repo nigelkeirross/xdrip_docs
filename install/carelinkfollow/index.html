@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#treatments" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -407,36 +412,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../g4/" class="md-nav__link">
-        G4
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../g5/" class="md-nav__link">
-        G5
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../g6/" class="md-nav__link">
-        G6
+        G5,G6, One, G7
       </a>
     </li>
   
@@ -451,20 +428,6 @@
     <li class="md-nav__item">
       <a href="../libreNFC/" class="md-nav__link">
         Libre NFC
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../librealarm/" class="md-nav__link">
-        LibreAlarm
       </a>
     </li>
   
@@ -521,20 +484,6 @@
     <li class="md-nav__item">
       <a href="../eversense/" class="md-nav__link">
         Eversense
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../medtrum/" class="md-nav__link">
-        Medtrum
       </a>
     </li>
   
@@ -610,9 +559,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CareLink follower
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         CareLink follower
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#treatments" class="md-nav__link">
+    Treatments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-line" class="md-nav__link">
+    Status line
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1575,6 +1560,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#treatments" class="md-nav__link">
+    Treatments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-line" class="md-nav__link">
+    Status line
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1595,23 +1602,35 @@
 <img src="../../images/M-S-HDS.png" style="zoom:75%;" /><br />
 <img src="../images/M-S-HDSlistM.png" style="zoom:76%;" /></p>
 <p></br></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Carelink server are subject to frequent modifications that might break the feature.<br />
+Consider using <a href="../companion">Companion app</a> on the master phone and xDrip+ <a href="../xdripfollower">Sync</a> or Nightscout to share data.<br />
+<strong>DO NOT USE THE SAME CARELINK ACCOUNT IN MORE THAN ONE XDRIP APPLICATION!</strong><br />
+When the same account is logged in from another xDrip+ application (like a variant) the previous login on the other xDrip+ application will be closed.</p>
+</div>
+<p></br></p>
 <p><strong>Check <a href="https://github.com/benceszasz/xDripCareLinkFollower#requirements">requirements</a>.</strong></p>
 <p></br></p>
-<p>Enter correctly your credentials and select the same country of your account.</p>
-<p><img src="../images/M-S-HDS-CF1.png" style="zoom:75%;" /></p>
+<p>Select your country, eventually a patient name (optional) and click Login to perform login in a browser.<br />
+<em>Note: set patient username if using a care partner account with multiple patients.</em></p>
+<p><img src="../images/M-S-HDS-CF1.png" style="zoom:71%;" /></p>
 <p>Grace period is an additional waiting time after receiving last reading + 5 minutes.</p>
 <p><img src="../images/M-S-HDS-CF2.png" style="zoom:75%;" /></p>
 <p>Missed data polling interval is an additional waiting time after received last reading + 5 minutes + grace period.</p>
 <p><img src="../images/M-S-HDS-CF3.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h4 id="treatments">Treatments<a class="headerlink" href="#treatments" title="Permanent link">⌁</a></h4>
 <p>You can download treatments and receive notifications.</p>
 <p><img src="../images/M-S-HDS-CF4.png" style="zoom:75%;" /></p>
 <p></br></p>
+<h4 id="status-line">Status line<a class="headerlink" href="#status-line" title="Permanent link">⌁</a></h4>
 <p><img src="../images/M-S-HDS-CF6.png" style="zoom:75%;" /></p>
 <p>Sensor status and pump status are available in <a href="../../use/lesscommon/#extra-status-line">Extra status line</a> option.</p>
 <p><img src="../images/M-S-HDS-CF5.png" style="zoom:75%;" /></p>
 <p></br></p>
 <p>If no data is visible and no error message pops-up you might need to <a href="../../use/startsensor/#followers-and-companion-apps">Start sensor</a>.</p>
-<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2022.11.05"><em>Last modified 5/11/2022</em></a></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.10.08"><em>Last modified 9/10/2023</em></a></p>
 
 
 

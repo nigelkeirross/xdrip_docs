@@ -410,36 +410,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../install/g4/" class="md-nav__link">
-        G4
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/g5/" class="md-nav__link">
-        G5
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../install/g6/" class="md-nav__link">
-        G6
+        G5,G6, One, G7
       </a>
     </li>
   
@@ -454,20 +426,6 @@
     <li class="md-nav__item">
       <a href="../../install/libreNFC/" class="md-nav__link">
         Libre NFC
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/librealarm/" class="md-nav__link">
-        LibreAlarm
       </a>
     </li>
   
@@ -524,20 +482,6 @@
     <li class="md-nav__item">
       <a href="../../install/eversense/" class="md-nav__link">
         Eversense
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/medtrum/" class="md-nav__link">
-        Medtrum
       </a>
     </li>
   
@@ -1961,6 +1905,11 @@ where HH::MM is the time, NNN is an internal time counter (a new reading has a n
 This shows that the sensor is connected, and good readings are being taken.
 The reading should be every minute, although some might have skipped, as has happened here.</p>
 <p></br></p>
+<h2 id="cannot-nfc-scan-new-sensor-nfc-timeout">Cannot NFC Scan new sensor - NFC Timeout<a class="headerlink" href="#cannot-nfc-scan-new-sensor-nfc-timeout" title="Permanent link">⌁</a></h2>
+<p>There is an emerging problem, especially in Europe, where you cannot start the sensor with an NFC scan. Instead of the "Scanned OK" message after "Scanning", you will see "NFC TimeOut" or "NFC failsafe". Look in the debug logs. If you see a message "Sensor type unknown, returning libre1 as failsafe", or "Libre sensor of type Libre1 detected", then you need to update both OOP2 &amp; xDrip+.</p>
+<p><img src="../images/libre2direct-failsafe-to-libre1.png" style="zoom:40%;" /></p>
+<p>You will need to download a version of OOP2 from the end of May 2023, and also
+upgrade xDrip-plus so that is is 2023-05-27 or later. A newer version of the sensors, "C5" with updated firmware require these updated versions.</p>
 <h2 id="losing-bluetooth-connection-with-samsung-phone">Losing Bluetooth Connection with Samsung Phone?<a class="headerlink" href="#losing-bluetooth-connection-with-samsung-phone" title="Permanent link">⌁</a></h2>
 <p>A number of people who have a Samsung phone have reported that they sometimes lose connection with the sensor. If this is the case with you, you can try changing some Bluetooth settings.Click on the QR code and then scan as directed.</p>
 <p><a href="../libre2direct-qr-samsung"><img src="../images/qr_libre2direct_samsung_30.png" style="zoom:50%;" /></a></p>

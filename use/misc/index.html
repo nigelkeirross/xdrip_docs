@@ -410,36 +410,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../install/g4/" class="md-nav__link">
-        G4
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/g5/" class="md-nav__link">
-        G5
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../install/g6/" class="md-nav__link">
-        G6
+        G5,G6, One, G7
       </a>
     </li>
   
@@ -454,20 +426,6 @@
     <li class="md-nav__item">
       <a href="../../install/libreNFC/" class="md-nav__link">
         Libre NFC
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/librealarm/" class="md-nav__link">
-        LibreAlarm
       </a>
     </li>
   
@@ -524,20 +482,6 @@
     <li class="md-nav__item">
       <a href="../../install/eversense/" class="md-nav__link">
         Eversense
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/medtrum/" class="md-nav__link">
-        Medtrum
       </a>
     </li>
   
@@ -1769,9 +1713,9 @@ It must be disabled for OOP2.</p>
 <p><img src="../images/M-S-LCS15i.png" style="zoom:78%;" /></p>
 <p>You can use OOP2 in different ways:</p>
 <ul>
-<li>No calibration generates vendor like values (native mode) without the need of calibrating</li>
-<li>Calibrate based on raw uses the sensor raw data (no temperature correction) like Libre 1</li>
-<li>Calibrate based on glucose allows you to apply xDrip+ calibration to native values</li>
+<li>No calibration generates vendor like values (native mode) without the need of calibrating. It doesn't mean that results are not calibrated (raw) but a vendor-like algorithm is applied (like the Libre 1 reader).</li>
+<li>Calibrate based on raw uses the sensor raw data (no temperature correction) like Libre 1. You will use the xDrip+ calibration algorithm.</li>
+<li>Calibrate based on glucose allows you to apply xDrip+ calibration to native values. Raw data are transformed using the vendor-like algorithm, then fed to the xDrip+ calibration algorithm.</li>
 </ul>
 <p><img src="../images/M-S-LCS15i2.png" style="zoom:78%;" /></p>
 <p>Smooth Libre data averages on 5 measurement. This will also delay readings.<br />
@@ -1782,7 +1726,7 @@ If this option doesn't bring the improvement expected, also try <a href="../disp
 <p>This option is not available at all.</p>
 <p><img src="../images/M-S-LCS15l.png" style="zoom:75%;" /></p>
 <p></br></p>
-<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.03.23"><em>Last modified 3/25/2023</em></a></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.06.24"><em>Last modified 6/26/2023</em></a></p>
 
 
 

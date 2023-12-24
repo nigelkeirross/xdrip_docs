@@ -12,7 +12,7 @@
         <link rel="prev" href="../install/">
       
       
-        <link rel="next" href="../g4/">
+        <link rel="next" href="../g6/">
       
       <link rel="icon" href="../../xDrip+logo.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
@@ -449,6 +449,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#aidex" class="md-nav__link">
+    Aidex
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sibionics" class="md-nav__link">
+    Sibionics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bluetooth-connection-to-a-sensor-or-a-bridge" class="md-nav__link">
     Bluetooth connection to a sensor or a bridge
   </a>
@@ -524,36 +538,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../g4/" class="md-nav__link">
-        G4
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../g5/" class="md-nav__link">
-        G5
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../g6/" class="md-nav__link">
-        G6
+        G5,G6, One, G7
       </a>
     </li>
   
@@ -568,20 +554,6 @@
     <li class="md-nav__item">
       <a href="../libreNFC/" class="md-nav__link">
         Libre NFC
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../librealarm/" class="md-nav__link">
-        LibreAlarm
       </a>
     </li>
   
@@ -638,20 +610,6 @@
     <li class="md-nav__item">
       <a href="../eversense/" class="md-nav__link">
         Eversense
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../medtrum/" class="md-nav__link">
-        Medtrum
       </a>
     </li>
   
@@ -1712,6 +1670,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#aidex" class="md-nav__link">
+    Aidex
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sibionics" class="md-nav__link">
+    Sibionics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bluetooth-connection-to-a-sensor-or-a-bridge" class="md-nav__link">
     Bluetooth connection to a sensor or a bridge
   </a>
@@ -1791,35 +1763,41 @@
 
 <p>Scroll down until you see your sensor or usecase.</p>
 <h2 id="g5-g6-one-and-g7">G5, G6, ONE and G7<a class="headerlink" href="#g5-g6-one-and-g7" title="Permanent link">⌁</a></h2>
-<p>If you connect xDrip+ to your sensor (G5, G6 and ONE), you will not be able to upload to Clarity (use Nightscout or Tidepool). You might be able to use sharing through Dexcom share servers but it needs to be setup with the vendor apps first.</p>
+<p>If you connect xDrip+ directly to your sensor (<a href="../g6">G5, G6, ONE and G7</a>), you <strong>will not be able</strong> to use the vendor app, upload to Clarity (you can use <a href="https://nightscout.github.io/">Nightscout</a> or <a href="../../use/cloud/#tidepool">Tidepool</a>). You might be able to use sharing through <a href="../../use/cloud/#dexcom-share-server-upload">share</a> servers but it needs to be setup with the vendor apps first.</p>
 <p><img src="../images/DS-DxDrip.png" style="zoom:50%;" /></p>
-<p>If you use the vendor apps (G5, G6, G7), you can connect xDrip+ through Dexcom Share as long as a follower has been setup.</p>
+<p>If you use the vendor apps (G5, G6, G7), you can connect xDrip+ as a <a href="../dexshare">Share follower</a> as long as a follower has been setup with the vendor apps.</p>
 <p><img src="../images/DS-DShare.png" style="zoom:50%;" /></p>
-<p>When using BYODA (G6) if you've enabled Broadcast to xDrip+ you don't need a network connection to have data in xDrip+.</p>
+<p>When using <a href="../byod">BYODA</a> (G6) if you've enabled Broadcast to xDrip+ you don't need a network connection to have data in xDrip+. Use the 640G/Eversense data source</p>
 <p><img src="../images/DS-BYOD.png" style="zoom:45%;" /></p>
-<p>You can add xDrip+ to your current setup and select Companion app to have xDrip+ read BG from the vendor app notifications (G5, G6, G7, ONE).</p>
+<p>You can add xDrip+ to your current setup and select <a href="../companion">Companion app</a> to have xDrip+ read BG from the vendor app notifications (G5, G6, G7, ONE).</p>
 <p><img src="../images/DS-DComp.png" style="zoom:50%;" /></p>
-<p>And this is also possible if you use CamAPS.</p>
+<p>And this is also possible if you use <a href="../companion">CamAPS</a>, still using the Companion app data source</p>
 <p><img src="../images/DS-GCAPS.png" style="zoom:50%;" /></p>
 <h2 id="libre">Libre<a class="headerlink" href="#libre" title="Permanent link">⌁</a></h2>
-<p>xDrip+ connects directly to Libre 2 EU, you can use Libre 1, Pro and 14 days US with a bridge device. Other Libre 2 and 3 sensors are not directly supported.</p>
-<p>You can connect Libre 2 EU to xDrip+, adding OOP2. You cannot upload data to the vendor servers (use Nightscout or Tidepool).</p>
+<p>xDrip+ connects directly to Libre 2 EU, you can use Libre 1 and 14 days US with a bridge device. Other Libre 2 and 3 sensors are not directly supported.</p>
+<p>You can connect Libre 2 EU to xDrip+, adding <a href="../../use/OOP/">OOP2</a>. You <strong>cannot</strong> use the vendor app for alarms (just NFC scans) and upload data to the vendor servers (use <a href="https://nightscout.github.io/">Nightscout</a> or <a href="../../use/cloud/#tidepool">Tidepool</a>). Use the <a href="../libreBT">Libre Bluetooth</a> data source.</p>
 <p><img src="../images/DS-L2EU.png" style="zoom:50%;" /></p>
-<p>Since Libre 1 don't have bluetooth, you need to add a bridge device. Some of these bridges also work with Libre 2 EU. Check your sensor doesn't require an OOP.</p>
+<p>Since Libre 1 don't have bluetooth, you need to add a <a href="../libreBT">bridge</a> device. Use the <a href="../libreBT">Libre Bluetooth</a> data source.<br />
+Some of these bridges also work with Libre 2 EU. Check your sensor doesn't require an <a href="../../use/OOP/">OOP</a>.</p>
 <p><img src="../images/DS-LBT.png" style="zoom:50%;" /></p>
-<p>The patched app can send data to xDrip+.</p>
+<p>The <a href="../libre2patch">patched app</a> can send data to xDrip+.</p>
 <p><img src="../images/DS-L2Patch.png" style="zoom:50%;" /></p>
-<p>For non-supported sensors you can also use Diabox or Juggluco, then broadcast data to xDrip+.</p>
+<p>For non-supported sensors (Libre 2 non-EU and Libre 3) you can also use Diabox or Juggluco, then <a href="../libre2patch">broadcast</a> data to xDrip+ that will receive data from the <a href="../libre2patch">Libre 2 patched</a> data source (<strong>not</strong> the patched app itself).</p>
 <p><img src="../images/DS-LOther.png" style="zoom:50%;" /></p>
-<p>You can follow a Libre 3 with xDrip+.</p>
+<p>You can follow a Libre 2 CGM (availability depends on countries) or a Libre 3 with xDrip+ with the <a href="../webfollower">Web follower</a> data source.</p>
 <p><img src="../images/DS-L3Web.png" style="zoom:50%;" /></p>
 <h2 id="guardian-and-minimed">Guardian and Minimed<a class="headerlink" href="#guardian-and-minimed" title="Permanent link">⌁</a></h2>
-<p>With a 640G/670G pump you need to get BG data from the pump using a glucometer connected to your phone with an OTG cable.</p>
+<p>With a <a href="../640_670">640G/670G pump</a> you need to get BG data from the pump using a glucometer connected to your phone with an OTG cable.</p>
 <p><img src="../images/DS-M6xx.png" style="zoom:50%;" /></p>
-<p>You can add xDrip+ to your current setup and select Companion app to have xDrip+ read BG from the vendor app notifications.</p>
+<p>You can add xDrip+ to your current setup and select <a href="../companion">Companion app</a> to have xDrip+ read BG from the vendor app notifications.</p>
 <p><img src="../images/DS-MComp.png" style="zoom:50%;" /></p>
-<p>You can follow sensor data when shared through Carelink.</p>
+<p>You can follow sensor data when shared through <a href="../carelinkfollow">Carelink</a>, but this feature might be broken frequently by the vendor.</p>
 <p><img src="../images/DS-MFoll.png" style="zoom:50%;" /></p>
+<h2 id="aidex"><a href="../aidex">Aidex</a><a class="headerlink" href="#aidex" title="Permanent link">⌁</a></h2>
+<p>You can receive data from the vendor app into xDrip+.</p>
+<h2 id="sibionics">Sibionics<a class="headerlink" href="#sibionics" title="Permanent link">⌁</a></h2>
+<p>The <a href="https://t.me/s/kubarev_modz">patched app</a> will allow you to use xDrip+ with the <a href="../640_670">640G/Eversense</a> data source.</p>
+<p></br></p>
 <h2 id="bluetooth-connection-to-a-sensor-or-a-bridge">Bluetooth connection to a sensor or a bridge<a class="headerlink" href="#bluetooth-connection-to-a-sensor-or-a-bridge" title="Permanent link">⌁</a></h2>
 <p>When connecting xDrip+ directly to a sensor, it will take care of the Bluetooth connection or to the Bluetooth device sending data from your device (called a bridge). </p>
 <div class="admonition warning">
@@ -1849,9 +1827,9 @@ If another device is connect to your sensor or bridge you should turn it off or 
 <ul>
 <li><a href="../g4">G4 (with bridge) or G4 Platinum receiver</a>  <br />
   <img src="../images/Install28.png" style="zoom:54%;" />    <img src="../images/Install29.png" style="zoom:50%;" /></li>
-<li><a href="../g5">G5</a><br />
+<li><a href="../g6">G5</a><br />
   <img src="../images/Install28.png" style="zoom:54%;" />    <img src="../images/Install30.png" style="zoom:49%;" /></li>
-<li><a href="../g6">G6 and One</a><br />
+<li><a href="../g6">G6, One and G7</a><br />
   <img src="../images/Install28.png" style="zoom:54%;" />    <img src="../images/Install31.png" style="zoom:50%;" /></li>
 <li><a href="../libreBT">Libre (with bridge)</a><br />
   <img src="../images/Install32.png" style="zoom:54%;" />    <img src="../images/Install33.png" style="zoom:50%;" /></li>
@@ -1881,12 +1859,10 @@ If another device is connect to your sensor or bridge you should turn it off or 
 <h2 id="follower-mode">Follower mode<a class="headerlink" href="#follower-mode" title="Permanent link">⌁</a></h2>
 <ul>
 <li><a href="../xdripfollower">xDrip+ Sync</a> (requires Google Play Services)</li>
-<li><a href="../nightscoutfollower">Nightscout and Diabox</a><br />
+<li><a href="../nightscoutfollower">Nightscout</a><br />
   <img src="../images/Install36.png" style="zoom:52%;" />    <img src="../images/Install38.png" style="zoom:53%;" /></li>
 <li><a href="../dexshare">Dex Share</a><br />
   <img src="../images/Install36.png" style="zoom:52%;" />    <img src="../images/Install39.png" style="zoom:53%;" /></li>
-<li><a href="../carelinkfollow">CareLink</a><br />
-  <img src="../images/Install36.png" style="zoom:52%;" />    <img src="../images/Install42.png" style="zoom:60%;" /></li>
 </ul>
 <p></br></p>
 <h2 id="changing-data-source">Changing data source<a class="headerlink" href="#changing-data-source" title="Permanent link">⌁</a></h2>
@@ -1895,9 +1871,9 @@ If another device is connect to your sensor or bridge you should turn it off or 
 <p><img src="../../images/hamburger_menu.png" style="zoom:75%;" /></p>
 <p><img src="../../images/M-S.png" style="zoom:75%;" /></p>
 <p><img src="../../images/M-S-HDS.png" style="zoom:75%;" /></p>
-<p><a href="../G4">G4 (with bridge) or G4 Platinum receiver</a>  </p>
+<p><a href="../g4">G4 (with bridge) or G4 Platinum receiver</a>  </p>
 <p><img src="../images/M-S-HDSlistA.png" style="zoom:75%;" /></p>
-<p><a href="../G5">G5</a>, <a href="../G6">G6 and One</a> </p>
+<p><a href="../g6">G5, G6, One and G7</a> </p>
 <p><img src="../images/M-S-HDSlistB.png" style="zoom:75%;" /></p>
 <p><a href="../libreBT">Libre (with bridge)</a> </p>
 <p><img src="../images/M-S-HDSlistC.png" style="zoom:75%;" /></p>
@@ -1907,13 +1883,13 @@ If another device is connect to your sensor or bridge you should turn it off or 
 <p><img src="../images/M-S-HDSlistE.png" style="zoom:75%;" /></p>
 <p><a href="../librealarm">Libre with patched SWR50 smartwatch</a> </p>
 <p><img src="../images/M-S-HDSlistF.png" style="zoom:75%;" /></p>
-<p><a href="../libre2patch">Libre 2 (only EU)</a></p>
+<p><a href="../libre2patch">Libre 2 (only EU), Diabox or Juggluco</a></p>
 <p><img src="../images/M-S-HDSlistG.png" style="zoom:75%;" /></p>
 <p><a href="../640_670">640G/670G pumps</a>, <a href="../eversense">Eversense</a> and <a href="../byod">Build your own app (BYODA)</a></p>
 <p><img src="../images/M-S-HDSlistH.png" style="zoom:75%;" /></p>
 <p><a href="../medtrum">Medtrum A6/S7</a> </p>
 <p><img src="../images/M-S-HDSlistI.png" style="zoom:75%;" /></p>
-<p><a href="../nightscoutfollower">Nightscout and Diabox</a> </p>
+<p><a href="../nightscoutfollower">Nightscout</a> </p>
 <p><img src="../images/M-S-HDSlistJ.png" style="zoom:75%;" /></p>
 <p><a href="../dexshare">Dex Share</a> </p>
 <p><img src="../images/M-S-HDSlistK.png" style="zoom:75%;" /></p>
@@ -1921,7 +1897,7 @@ If another device is connect to your sensor or bridge you should turn it off or 
 <p><img src="../images/M-S-HDSlistN.png" style="zoom:75%;" /></p>
 <p><a href="../aidex">GlucoRx/Aidex</a></p>
 <p><img src="../images/M-S-HDSlistP.png" style="zoom:75%;" /></p>
-<p><a href="../webfollower">Web Follower</a> for Libre 3</p>
+<p><a href="../webfollower">Web Follower</a> for Libre 2 CGM and Libre 3</p>
 <p><img src="../images/M-S-HDSlistO.png" style="zoom:75%;" /></p>
 <p><a href="../carelinkfollow">CareLink</a></p>
 <p><img src="../images/M-S-HDSlistM.png" style="zoom:75%;" /></p>
@@ -1929,7 +1905,7 @@ If another device is connect to your sensor or bridge you should turn it off or 
 <p>If you want to disable xDrip+.</p>
 <p><img src="../images/M-S-HDSlistL.png" style="zoom:75%;" /></p>
 <p></br></p>
-<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.02.26"><em>Last modified 3/5/2023</em></a></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2023.10.08"><em>Last modified 9/10/2023</em></a></p>
 
 
 

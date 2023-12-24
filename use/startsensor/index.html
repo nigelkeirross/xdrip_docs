@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#g4-with-bridge-g5-g6-and-one" class="md-skip">
+        <a href="#g5-g6-one-and-g7" class="md-skip">
           Skip to content
         </a>
       
@@ -410,36 +410,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../install/g4/" class="md-nav__link">
-        G4
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/g5/" class="md-nav__link">
-        G5
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../install/g6/" class="md-nav__link">
-        G6
+        G5,G6, One, G7
       </a>
     </li>
   
@@ -454,20 +426,6 @@
     <li class="md-nav__item">
       <a href="../../install/libreNFC/" class="md-nav__link">
         Libre NFC
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/librealarm/" class="md-nav__link">
-        LibreAlarm
       </a>
     </li>
   
@@ -524,20 +482,6 @@
     <li class="md-nav__item">
       <a href="../../install/eversense/" class="md-nav__link">
         Eversense
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../install/medtrum/" class="md-nav__link">
-        Medtrum
       </a>
     </li>
   
@@ -771,22 +715,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#g4-with-bridge-g5-g6-and-one" class="md-nav__link">
-    G4 with bridge, G5, G6 and ONE
+  <a href="#g5-g6-one-and-g7" class="md-nav__link">
+    G5, G6, ONE and G7
   </a>
-  
-    <nav class="md-nav" aria-label="G4 with bridge, G5, G6 and ONE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sensor-code" class="md-nav__link">
-    Sensor code
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1643,22 +1574,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#g4-with-bridge-g5-g6-and-one" class="md-nav__link">
-    G4 with bridge, G5, G6 and ONE
+  <a href="#g5-g6-one-and-g7" class="md-nav__link">
+    G5, G6, ONE and G7
   </a>
-  
-    <nav class="md-nav" aria-label="G4 with bridge, G5, G6 and ONE">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sensor-code" class="md-nav__link">
-    Sensor code
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1694,36 +1612,8 @@
   <h1>Start sensor</h1>
 
 <p>Starting a sensor in xDrip+ has very different functions depending on the sensor itself.</p>
-<h3 id="g4-with-bridge-g5-g6-and-one">G4 with bridge, G5, G6 and ONE<a class="headerlink" href="#g4-with-bridge-g5-g6-and-one" title="Permanent link">⌁</a></h3>
+<h3 id="g5-g6-one-and-g7">G5, G6, ONE and G7<a class="headerlink" href="#g5-g6-one-and-g7" title="Permanent link">⌁</a></h3>
 <p>Reference documentation is <a href="https://navid200.github.io/xDrip/docs/Proper-connectivity.html">here</a>.</p>
-<p>xDrip+ will actually send a sensor start command to the transmitter, the same way it would be done by the receiver or the vendor master app.</p>
-<p>If xDrip+ already has a started sensor, you will need to <a href="../stopsensor">stop</a> it before starting the new one.</p>
-<p>Starting an already started sensor will just allow xDrip+ to continue the current session without interfering.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>If you use the receiver or a connected pump, let them start and stop sensors: don't do that with xDrip+.</strong><br />
-Starting a new sensor should be done only once <a href="../../install/g5/">G5</a> or <a href="../../install/g6/">G6/ONE</a> settings and <a href="../../troubleshoot/connection">connection</a> have been verified.<br />
-Never attempt to restart a G6 sensor when in trouble.<br />
-You cannot start a sensor when the transmitter has exceeded its programmed lifetime (105 days for G5 and 99 for G6). You can only hard reset <a href="../../troubleshoot/connection/#firefly-transmitters">old versions</a> of transmitters.</p>
-</div>
-<p><img src="../../images/hamburger_menu.png" style="zoom:75%;" /></p>
-<p><img src="../../install/images/M-StaS.png" style="zoom:75%;" /></p>
-<p>Confirm <code>START SENSOR</code></p>
-<p><img src="../../install/images/M-StaSC.png" style="zoom:75%;" /></p>
-<p>xDrip+ will drive you to the <a href="../../troubleshoot/systemstatus/#g5-and-g6">system status</a> page, do not exit until the transmitter is <a href="../../troubleshoot/connection/#check-connection">connected</a>.</p>
-<p>During warm-up phase xDrip+ will not display data, you will see an indication on the main graph of the time necessary until then.<br />
-Check system status from time to time to make sure the transmitter is connected. If connection drops, check your <a href="../../install/g5/">G5</a> or <a href="../../install/g5/">G6</a> settings and <a href="../../troubleshoot/connection">connection</a>.</p>
-<p><img src="../../install/images/M-SS-Warmup.png" style="zoom:66%;" /></p>
-<h5 id="sensor-code">Sensor code<a class="headerlink" href="#sensor-code" title="Permanent link">⌁</a></h5>
-<p>Once warm-up is complete, if you're using a G6 or ONE, you will be asked to enter the sensor calibration code.<br />
-This is the 4 digits number indicated on your sensor sticker protection. Take a picture of it to avoid losing it.<br />
-Do not start a sensor with a code different from the one received with it. If you lost the sensor code, see below: No code start.</p>
-<p><img src="../../install/images/M-StaSCode.png" style="zoom:75%;" /></p>
-<div class="admonition note">
-<p class="admonition-title">No code start</p>
-<p>If you use the sensor code 0000 (4 zeroes) you will start the G6 or ONE sensor in G5 mode: two calibrations at 12 hours distance then once every 24 hours will be required.</p>
-</div>
-<p>If you're using a G5 you will need to calibrate.</p>
 <p></br></p>
 <h3 id="libre">Libre<a class="headerlink" href="#libre" title="Permanent link">⌁</a></h3>
 <p>Note - this section does NOT apply to Libre 2 connecting to xDrip without a bridge. For these, see the instructions for <a href="../../install/libre2#starting-libre-2-sensors">Libre 2 Direct</a></p>
@@ -1781,7 +1671,7 @@ Do not use Start and Stop sensor with xDrip+ Sync follower unless you know the p
 <p><img src="../../install/images/M-StaSToday.png" style="zoom:75%;" /></p>
 <p>xDrip+ should pick-up readings with the next measurement.</p>
 <p><br></p>
-<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2022.06.28"><em>Last modified 28/6/2022</em></a></p>
+<p><a href="https://github.com/NightscoutFoundation/xDrip/releases/tag/2022.10.06"><em>Last modified 8/10/2023</em></a></p>
 
 
 
